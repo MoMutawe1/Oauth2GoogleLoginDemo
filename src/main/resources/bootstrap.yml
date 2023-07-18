@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: socialLogin
+  cloud:
+    vault:
+      uri: http://localhost:8200
+      token: hvs.tf1JlaMiPkBk0YrHJBTZThHm
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh, env
+  endpoint:
+    env:
+      post:
+        enabled: true

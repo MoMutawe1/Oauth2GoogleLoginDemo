@@ -13,6 +13,7 @@ public class WebSecurity {
 
         http.authorizeHttpRequests()
                 .requestMatchers("/").permitAll()
+                .requestMatchers("actuator/env").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .oauth2Login();

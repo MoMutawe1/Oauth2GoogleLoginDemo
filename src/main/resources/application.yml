@@ -7,5 +7,5 @@ spring:
       client:
         registration:
           google:
-            client-id: <Your client id>
-            client-secret: <Your client secret>
+            client-id: ${googleClientId}
+            client-secret: ${googleClientSecret}
